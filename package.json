@@ -20,7 +20,6 @@
   },
   "author": "Hugo Nogueira",
   "license": "UNLICENSED",
-  "private": true,
   "bugs": {
     "url": "https://github.com/dk-books/rollup-utilities.git/issues"
   },
