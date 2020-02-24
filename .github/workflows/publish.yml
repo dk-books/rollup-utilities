@@ -7,8 +7,6 @@ on:
 jobs:
   publish-gpr:
     runs-on: ubuntu-latest
-    env:
-      NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
     steps:
       - uses: actions/checkout@v1
       - uses: actions/setup-node@v1
@@ -20,3 +18,5 @@ jobs:
       - run: npm run build
       - run: npm test
       - run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
