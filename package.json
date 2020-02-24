@@ -1,5 +1,5 @@
 {
-  "name": "@dkbooks/rollup-utilities",
+  "name": "@dk-books/rollup-utilities",
   "version": "1.0.0",
   "description": "A bluprint for node apps",
   "main": "dist/index.js",
