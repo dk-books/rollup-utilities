@@ -1,9 +1,8 @@
 name: Publish Package
 
 on:
-  push:
-    branches:
-      - master
+  release:
+    types: [published]
 
 jobs:
   publish-gpr:
@@ -19,4 +18,5 @@ jobs:
           scope: '@dk-books'
       - run: npm ci
       - run: npm run build
-      - run: npm run release
+      - run: npm test
+      - run: npm publish
