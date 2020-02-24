@@ -1,6 +1,3 @@
-/**
- * Happy coding!
- */
 import { OutputBundle, OutputAsset, OutputChunk } from 'rollup';
 
 /**

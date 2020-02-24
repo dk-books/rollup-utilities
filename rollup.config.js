@@ -8,7 +8,7 @@ const DISTDIR = 'dist';
 const EXTENSIONS = ['.js', '.ts'];
 
 /** Deletes the distribution folder every time we run the bundler  */
-rimraf.sync(DISTDIR);
+// rimraf.sync(DISTDIR);
 
 const config = {
   input: 'src/index.ts',

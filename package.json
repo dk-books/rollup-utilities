@@ -1,24 +1,29 @@
 {
-  "name": "blueprint-node-app",
-  "version": "1.0.0",
+  "name": "@dkbooks/rollup-utilities",
+  "version": "0.0.0",
   "description": "A bluprint for node apps",
   "main": "dist/index.js",
   "source": "src/index.ts",
   "typings": "dist/index.d.ts",
   "scripts": {
     "test": "jest",
-    "build": "npx rollup -c"
+    "build": "npm run build:typescript && npx rollup -c",
+    "build:typescript": "npx tsc --emitDeclarationOnly"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/greyskullrocks/blueprint-node-app.git"
+    "url": "git+https://github.com/dk-books/rollup-utilities.git"
   },
   "author": "Hugo Nogueira",
-  "license": "MIT",
+  "license": "UNLICENSED",
+  "private": true,
   "bugs": {
-    "url": "https://github.com/greyskullrocks/blueprint-node-app/issues"
+    "url": "https://github.com/dk-books/rollup-utilities.git/issues"
   },
-  "homepage": "https://github.com/greyskullrocks/blueprint-node-app#readme",
+  "homepage": "https://github.com/dk-books/rollup-utilities#readme",
   "devDependencies": {
     "@babel/core": "^7.8.4",
     "@babel/preset-env": "^7.8.4",
