@@ -3,6 +3,7 @@ import { OutputBundle, OutputAsset, OutputChunk } from 'rollup';
 /**
  * Loops through the generated bundle an returns the filename of css files
  * @param {OutputBundle} bundle
+ * @param {string} ext
  */
 export function getAssetsByExtention(
   bundle: OutputBundle,
