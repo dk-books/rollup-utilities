@@ -1,9 +1,10 @@
 import { OutputBundle, OutputAsset, OutputChunk } from 'rollup';
 
 /**
- * Loops through the generated bundle an returns the filename of css files
- * @param {OutputBundle} bundle
- * @param {string} ext
+ * Loops through the generated bundle an returns the filename of the files that match the provided extension
+ * @param bundle - The rollup.js bundle containing all assets and chunks from the project
+ * @param ext - File extention to match
+ * @returns An array with the file matching the extension
  */
 export function getAssetsByExtention(
   bundle: OutputBundle,
@@ -16,11 +17,11 @@ export function getAssetsByExtention(
 
 /**
  * Loops through the generated bundle an returns the filename of the entry scripts
- * @param {*} bundle
+ * @param bundle - The rollup.js bundle containing all assets and chunks from the project
+ * @returns An array with the entry filenames
  */
 export function getEntryFilenames(bundle: OutputBundle): string[] {
-  const files = Object.values(bundle);
-  return files
+  return Object.values(bundle)
     .filter((val: OutputChunk) => val.isEntry)
     .map(val => val.fileName);
 }
