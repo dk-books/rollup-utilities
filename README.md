@@ -2,7 +2,7 @@
 
 ## Getting started
 
-To use the cli you need to generate a new GitHub [token](https://github.com/settings/tokens) with the `repo` and `read:packages` scopes.
+To use this package you need to generate a new GitHub [token](https://github.com/settings/tokens) with the `repo` and `read:packages` scopes.
 
 **Make sure you save the token somewhere safe. After being generated you won't be able to see it again.**
 
@@ -23,7 +23,7 @@ npm config set @dk-books:registry https://npm.pkg.github.com
 ## Installing
 
 ```bash
-npm install @dk-books/rollup-utilities --save-dev
+npm install @dk-books/rollup-utilities --save
 ```
 
 ## Usage
