@@ -1,6 +1,6 @@
 {
   "name": "@dk-books/rollup-utilities",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A collection of tools to help develop rollup plugins",
   "main": "utilities/index-cjs.js",
   "source": "src/index.ts",
