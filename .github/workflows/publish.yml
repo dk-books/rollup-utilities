@@ -16,4 +16,4 @@ jobs:
       - name: npm publish
         run: npm publish --access public
         env:
-          NODE_AUTH_TOKEN: ${{secrets.GPR_ACCESS_TOKEN_MAR23}}
+          NODE_AUTH_TOKEN: ${{secrets.UI_NPM_TOKEN_2023}}
